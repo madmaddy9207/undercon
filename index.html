@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction - Cyberpunk Style</title>
+    <link rel="icon" type="image/x-icon" href="https://t3.ftcdn.net/jpg/03/81/30/16/360_F_381301638_mo8XtnvD4VtKWjNITYhwL3ITRxF4ldaO.jpg">
+   <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body, html {
+            height: 100%;
+            font-family: 'Courier New', Courier, monospace;
+            color: #00ff00; /* Neon green text */
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000; /* Black background */
+            overflow: hidden;
+        }
+
+        /* Fullscreen background video */
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+    background-size: cover;
+            filter: brightness(50%) contrast(120%); /* Darken video */
+        }
+
+        /* Content Styling */
+        h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+        }
+
+        p {
+            font-size: 1.5rem;
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+        }
+      
+
+        /* Optional: Add a flickering effect */
+        @keyframes flicker {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% {
+                opacity: 1;
+            }
+            20%, 24%, 55% {
+                opacity: 0.4;
+            }
+        }
+
+        h1, p {
+            animation: flicker 1.5s infinite alternate;
+        }
+        .copyrt{
+            font-size: 1rem;
+            padding-top: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop>
+        <source src="videoplayback.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Content -->
+    <div>
+        <h1>SYSDEVCODE</h1>
+    
+        <p>Stay tuned for something futuristic and exciting!</p>
+
+        <p class="copyrt">© 2024, SYSDEVCODE TECHNOLOGIES Pvt Ltd</p>
+    </div>
+
+</body>
+</html>
